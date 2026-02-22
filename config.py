@@ -5,12 +5,12 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Recommended
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8430889261:AAFsUtpl8BdRi5W2DOKswNRezHzW87e9ZU4")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8089763643:AAHuta_94v4NFzckYsP7xAdWUIBufhFG654")
 APP_ID = int(os.environ.get("APP_ID", "26944587"))
 API_HASH = os.environ.get("API_HASH", "7261a455f2a6159b8a2fbfecd1a63004")
 
 # Main
-OWNER_ID = int(os.environ.get("OWNER_ID", "7813956229"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7890071874"))
 PORT = os.environ.get("PORT", "8080")
 
 # Database
@@ -62,7 +62,7 @@ DATABASE_CHANNEL = int(os.environ.get("DATABASE_CHANNEL", "-1002910727461")) # C
 
 try:
     ADMINS = []
-    for x in (os.environ.get("ADMINS", "7813956229").split()):
+    for x in (os.environ.get("ADMINS", "7890071874").split()):
         ADMINS.append(int(x))
 except ValueError:
     raise Exception("Your Admins list does not contain valid integers.")
